@@ -1,0 +1,6 @@
+<h1>Hellow</h1>
+<div data-controller="hello">
+        <%= form_tag({:action => :upload}, :multipart => true) do %>
+        <%= file_field_tag 'picture' %>
+    <% end %>
+</div>
