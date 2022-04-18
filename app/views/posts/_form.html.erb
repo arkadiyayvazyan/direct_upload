@@ -24,7 +24,7 @@
   <div data-controller="posts">
     <%= form.label :files %>
     <%= form.file_field :files, multiple: true, direct_upload: true, 'data-posts-target' => "input" %> 
-    <progress data-posts-target="bar" style="display: none;"></progress>
+    <progress data-posts-target="bar" value="0" style="display: block;"></progress>
   </div>
 
   <div>

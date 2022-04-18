@@ -72,3 +72,7 @@ group :test do
 end
 
 gem "webpacker", "~> 5.4"
+
+gem "streamio-ffmpeg", "~> 3.0"
+
+gem "redis", "~> 4.6"
