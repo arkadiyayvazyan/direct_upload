@@ -1,0 +1,5 @@
+<%= turbo_frame_tag @todo do %>
+    <p><%= @todo.description %></p>
+
+    <%= link_to 'Edit this todo', edit_todo_path(@todo) %>
+<% end %>

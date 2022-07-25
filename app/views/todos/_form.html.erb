@@ -1,0 +1,7 @@
+<%= form_with(model: todo, id:"#{dom_id(todo)}_form") do |form| %>
+  <div>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+    <%= form.submit %>
+  </div>
+<% end %>

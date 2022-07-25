@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
-    ConvertVideoJob.perform_later()
+    DownloadVideoJob.perform_later("https://www.youtube.com/watch?v=Nobxw1SzxVM")
   end
 
   # GET /posts/1/edit
